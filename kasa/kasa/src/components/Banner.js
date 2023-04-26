@@ -1,5 +1,9 @@
+import '../styles/Banner.css'
+
 function Banner() {
-    return <h1>La maison jungle</h1>
+    return (
+    <div className='titre'><h1>Chez vous, partout et ailleurs</h1>
+    </div>)
 }
 
 export default Banner
