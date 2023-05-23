@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import '../styles/Header.css'
 
  function NavHeader() {
 	return (
-		<nav className="nav-header">
-			<Link to="/" className="NavHeaderHome">
-				Accueil
+		<nav className="NavHeader">
+			<Link to="/" className="NavHead">
+				Acceuil
 			</Link>
-			<Link to="/about" className="NavHeaderAbout">
+			<Link to="/about" className="NavHead">
 				A Propos
 			</Link>
 		</nav>

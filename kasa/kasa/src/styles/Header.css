@@ -1,0 +1,27 @@
+.Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.NavHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+
+.logo {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+.NavHead {
+    font-size: 19px;
+    color: #FF6060;
+}

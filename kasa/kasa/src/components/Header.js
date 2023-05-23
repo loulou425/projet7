@@ -1,12 +1,13 @@
 import Logo from "../images/LOGO.svg"
 import NavHeader from './NavHeader'
+import '../styles/Header.css'
 
 function Header (){
     return(
-    <header className="headerWrap">
+    <div className="Header">
         <img className="logo" src={Logo} alt="logo de l'agence kasa" />
         <NavHeader className="NavHeader" />
-    </header>
+    </div>
 
 
  );

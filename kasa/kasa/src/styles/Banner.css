@@ -1,6 +1,21 @@
 .titre{
-    color: blue;
-    text-align: right;
-    padding: 32px;
-    border-bottom: solid 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre h1
+{
+    color: white;
+    font-size: 50px;
+    position : absolute; 
+    font-family: 'Montserrat';
+}
+
+.titre .img1 
+{
+    border-radius: 20px;
+    filter : brightness(50%);
+    z-index: -1;
+    width: 99%;
 }
