@@ -1,0 +1,54 @@
+.ImgCollapse {
+    width: auto;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    height: 45px;
+    padding: 6px 20px;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #FF6060;
+}
+
+.ChildCollapse {
+    width: auto;
+    height: auto;
+    display: flex;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 350;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 35px 20px;
+    background-color: #f7f7f7;
+    color: #FF6060;
+}
+
+.droite {
+    cursor: pointer;
+}
+.gauche {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px){
+    .ImgCollapse {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ChildCollapse {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+}

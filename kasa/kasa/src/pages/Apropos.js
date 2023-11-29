@@ -1,17 +1,16 @@
 import React from 'react';
-import Banner from '../components/Banner'
 import Header from '../components/Header'
-import Gallery from '../components/Gallery'
 import Footer from '../components/Footer'
-
+import Banner2 from '../components/Banner2';
+import Collapse from '../components/Collapse';
 
 function Accueil() {
 
     return (
-     <div>
+     <div >
        <Header/>
-       <Banner/>
-       <Gallery/>
+       <Banner2/>
+       <Collapse/>
        <Footer/>
      </div>
     

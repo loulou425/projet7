@@ -1,5 +1,5 @@
 .Footer {
-    width: 100%;
+    width: auto;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
 
 
 .Footer p {
-    width: 500px;
+    width: auto;
     height: 25px;
     font-size: 22px;
     margin-top: 30px;

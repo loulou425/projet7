@@ -5,7 +5,7 @@ import '../styles/Header.css'
 	return (
 		<nav className="NavHeader">
 			<Link to="/" className="NavHead">
-				Acceuil
+				Accueil
 			</Link>
 			<Link to="/about" className="NavHead">
 				A Propos

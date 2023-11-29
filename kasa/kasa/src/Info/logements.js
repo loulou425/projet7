@@ -1,3 +1,4 @@
+export const data = 
 [
 	{
 		"id": "c67ab8a7",
@@ -617,3 +618,4 @@
 		]
 	}
 ]
+

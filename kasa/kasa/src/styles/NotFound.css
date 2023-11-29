@@ -1,0 +1,36 @@
+.erreur {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-size: 280px;
+    font-weight: 700;
+    text-align: center;
+    color: #FF6060;
+}
+
+.oups {
+    margin-top: 0px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #FF6060;
+    text-align: center;
+}
+
+.link {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: center;
+    display: flex;
+    color: #FF6060;
+}
+
+@media screen and (max-width: 595px){
+
+.erreur{
+    font-size: 150px;
+}
+.oups{
+    font-size: 25px;
+}
+}

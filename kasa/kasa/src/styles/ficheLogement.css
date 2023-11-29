@@ -1,0 +1,294 @@
+
+.body {
+    margin-top: 20px;
+}
+
+.caroussel {
+    border-radius: 25px;
+}
+
+.caroussel .slider {
+    height: 415px;
+    margin-bottom: 10px;
+
+}
+
+.caroussel .gauche {
+    position: absolute;
+    width: 60px;
+    margin-left: 2%;
+    height: 100px;  
+    margin-top: 150px;
+}
+
+.caroussel .droite {
+    position: absolute;
+    margin-left: 95%;
+    transform: translateX(-70%);
+    margin-top: 150px;
+    width: 60px;
+    height: 100px; 
+}
+
+.caroussel img {
+     object-fit: cover;
+     width: 100%;
+     height: 400px;
+     border-radius: 25px;
+ }
+ 
+.caroussel .bullet {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 305px;
+    font-size: 30px;
+    color: white;
+}
+.caroussel .bulle {
+    cursor: pointer;
+    color: #FF6060;
+}
+
+
+.information {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.adress-tag {
+    width: 50%;
+}
+
+.titre-adresse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titre-adresse .titre {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    color: #FF6060;
+}
+
+.adresse {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.agent-note {
+    width: 50%;
+}
+
+.agent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.agent p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 90px;
+    color: #FF6060;
+    
+}
+
+.agent img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.note {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; 
+}
+
+.tag {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200%;
+}
+
+.tag p {
+    height: 30px;
+    border-radius: 10px;
+    background: #FF6060;
+    padding:0 15px;
+    width: auto;
+    font-size: 70%;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.description-equippement {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+
+.description {
+    width: 50%;
+}
+
+.equipement {
+    width: 50%;
+    margin-left: 5%;
+    float: right;
+    
+}
+.equipement p {   
+   margin: 10px; 
+}
+.description .ImgCollapse{
+    margin-left: 0;
+    width: 93%;
+}
+.description .ChildCollapse{
+    width: 93%;
+    height: auto;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.equipement .ImgCollapse{
+    margin-left: 0;
+    width: 93%;
+}
+.equipement .ChildCollapse{
+    width: 93%;
+    height: auto;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.etoile {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1258px){
+    .description .ImgCollapse{
+        width: 90%;
+    }
+    .description .ChildCollapse{
+        width: 90%;
+    }
+    
+    .equipement .ImgCollapse{
+        width: 90%;
+    }
+    .equipement .ChildCollapse{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .caroussel .gauche {
+        margin-left: 0.5%;
+    }
+    
+    .caroussel .droite {
+        transform: translateX(-85%);
+    }
+    .caroussel .bullet {
+        display: none;
+    }
+    .titre-adresse .titre {
+        width: 240px;
+        font-size: 25px;
+    }
+    .tag p {
+        margin-right: 2%; 
+    }
+    .information {
+        margin-top: 0;
+        display: block;
+    }
+    .agent-note {
+        width: 100%;
+    }
+    .agent{
+        position: absolute;
+    }
+    .note {
+        position: relative;
+        float: left;
+        padding-top: 20px;
+    }
+    .description-equippement {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .description .ImgCollapse{
+        width: 186%;
+    }
+    .description .ChildCollapse{
+        width: 186%;
+    }
+    
+    .equipement .ImgCollapse{
+        width: 186%;
+    }
+    .equipement .ChildCollapse{
+        width: 186%;
+    }
+    .equipement {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 569px){
+    .tag p {
+        padding:0 5px;
+        font-size: 60%;
+    }
+    .agent p {
+        font-size: 15px;
+        font-weight: 500;
+        color: #FF6060;
+        width: 70px;
+    }
+    
+    .agent img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+    }
+    .agent{
+        margin-top: 10px;
+       }
+    .note {
+        margin: 5px;
+    }
+
+    .etoile {
+        height: 20px;;
+        margin: 2px;
+    }
+    .description .ImgCollapse{
+        width: 175%;
+    }
+    .description .ChildCollapse{
+        width: 175%;
+    }
+    
+    .equipement .ImgCollapse{
+        width: 175%;
+    }
+    .equipement .ChildCollapse{
+        width: 175%;
+    }
+    
+
+}
