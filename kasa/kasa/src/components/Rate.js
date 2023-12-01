@@ -20,6 +20,7 @@ function Rating () {
          if(index === parseInt(ficheLogement?.rating)) {
              etoileComplete = false;
          }
+         
          if(etoileComplete === true) {
              noteLogement.push(<img key={index} className="etoile" src={Star} alt={`${ficheLogement?.rating}/5`}/>)
          } else {

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Caroussel from '../components/Caroussel';
 import Header from '../components/Header';
 import { data } from "../Info/logements";
-import Collapse from "../components/CollapseSous";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer"
 import Rating from '../components/Rate';
 import NotFoundPage from './NotFoundPage';

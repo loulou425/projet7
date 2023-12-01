@@ -1,26 +1,37 @@
 import React from 'react';
-import CollapseSous from '../components/CollapseSous';
+import { useState } from 'react';
+import '../styles/CollapseSous.css'
+import Vector from "../images/Vector.svg"
+import Vector2 from "../images/Vector2.svg"
 
+function Collapse(props) {
+    const nom = props.nom; 
 
-function Collapse() {
-    return(
-    <div>
-            <CollapseSous nom="Fiabilité" className="collapse" >
-            Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
-            </CollapseSous>
+    const [open, setOpen] = useState(false);
 
-            <CollapseSous nom="Respect" className="collapse">
-            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.
-            </CollapseSous>
+    //Comportement du click sur le collapse 
+    const HandleClick = () => {
+    //expresion ternaire: si le prédicat est vrai alor on prend A (setopen est true) , sinn on prend B (setopen est false) (question ? A : B)
+        (open === false) ? setOpen(true) : setOpen(false);
+    }
 
-            <CollapseSous nom="Service" className="collapse">
-            Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.
-            </CollapseSous>
+    if (open === true) {
+        return (
+            <div className={props.className}>
 
-            <CollapseSous nom="Sécurité" className="collapse">
-            La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
-            </CollapseSous>
-    </div>)
-}
+                <span className='ImgCollapse'>{nom}<img src={Vector2} className="fa-solid fa-chevron-up ouvert" onClick={HandleClick}></img></span>
+                <span className='ChildCollapse'>
+                    {props.children}
+                </span>
+
+            </div>
+        );
+    }
+    return (
+        <div className={props.className}>
+            <span className='ImgCollapse'> {nom} <img  src={Vector} className="fa-solid fa-chevron-down ferme" onClick={HandleClick}></img> </span>
+        </div>
+    ); 
+};
 
 export default Collapse;
